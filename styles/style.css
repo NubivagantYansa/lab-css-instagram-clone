@@ -22,7 +22,6 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
   display: flex;
-  padding: 5px;
 }
 
 .wrapper{
@@ -157,7 +156,7 @@ footer{
     margin: 0;
     width: 80px;
     height: 25px;
-    font-size: 10px;
+    font-size: 16px;
 
   }
   .wrapper{
@@ -199,11 +198,11 @@ footer{
   }
 
   .list ul{
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1200px){
 
   body{
     width: 100%;
@@ -219,7 +218,7 @@ footer{
   display: block;
   position: fixed;
   width: 20%;
-  height: 200%;
+  height: 100vw;
   transform: rotate(90deg) translateY(-100%);
   transform-origin:top left;
   z-index: -1;
@@ -236,7 +235,7 @@ footer{
 
 #insta-bar > button{
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 
 }
 .list {
