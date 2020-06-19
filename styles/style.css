@@ -4,7 +4,246 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+/* Phone settings */
+*{
+  margin:0;
+  padding:0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  -ms-overflow-style: scrollbar;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 5px;
+  
+}
+
+#img-banner{
+display: none;
+}
+
+.main-info{
+  width: 100%;
+}
+
+#insta-bar{
+  padding: 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1c5380;
+}
+#insta-bar > img{
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+#insta-bar > button{
+  background-color:#1c5380;
+  width: 80px;
+  height: 30px;
+  color: white;
+  font-weight: 900;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1 solid rgb(20, 66, 99);
+  border-radius: 10%;
+  margin-top: 10px;
+}
+
+.main-info h1{
+  padding: 0px 30px 20px;
+  font-size: 50px;
+
+}
+
+.main-info h2{
+  padding: 10px;
+  font-size: 25px;
+  color: #06365f;
+  line-height: 30px;
+  text-align: center;
+  
+}
+
+.main-info p{
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #06365f;
+  line-height: 24px;
+}
+
+.text-box{
+  background-image: url('../images/frame.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 5px 5px;
+}
+
+.img-phones{
+  width: 90%;
+  padding: 30px 10px;
+}
+
+.download-img{
+  width: 30%;
+}
+
+.download-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 5px;
+}
+
+footer{
+  padding: 20px 30px;
+  line-height: 40px;
+
+}
+
+.cap-word{
+  text-transform: uppercase;
+  color: rgb(18, 86, 136);
+  font-weight: 900;
+  font-size:20px;
+  }
+
+  /* Ipad settings */
+
+@media only screen and (min-width: 768px){
+
+  body{
+    width: 100vw;
+    position: static;
+  }
+  
+  #img-banner{
+    display: block;
+    position: fixed;
+    width: 30%;
+    height: 300%;
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin:top left;
+    z-index: -1;
+  }
+  
+  #insta-bar{
+    background-color: transparent;
+    display: flex;
+  }
+
+  #insta-bar > img{
+    width: min-content;
+    height: auto;
+  }
+
+  #insta-bar > button{
+    margin: 0;
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+
+  }
+  .wrapper{
+    width: 100%;
+    height: auto;
+    padding: 50px 10px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .img-phones{
+    order: 1;
+    height: min-content;
+    padding: 30px 10px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-info{
+    order: 2;
+    width: 50%;
+    height: auto;
+    margin: 0 20px;
+    padding: 0;
+  }
+  .list{
+    order: 3;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .list ul{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+
+  body{
+    width: 100%;
+    position: static;
+  }
+.wrapper{
+  width: 1000px;
+  justify-content: center;
+  padding-left: 10%;
+} 
+
+#img-banner{
+  display: block;
+  position: fixed;
+  width: 20%;
+  height: 200%;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin:top left;
+  z-index: -1;
+}
+
+#insta-bar{
+  justify-content: space-between;
+  align-items: center;
+}
+#insta-bar > img{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#insta-bar > button{
   margin: 0;
+  font-size: 14px;
+
+}
+.list {
+justify-content: center;
+}
+
+.list ul{
+  margin: 0 10px;
+}
 }
